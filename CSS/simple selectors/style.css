@@ -1,0 +1,31 @@
+/* Universal selector */
+*{
+    margin: 10px;
+    background-color: lightblue;
+}
+
+/* Tag selector */
+p{
+    color: purple;
+}
+
+/* Class selector */
+.para{
+    color: blue;
+}
+
+
+/* Id selector */
+#heading{
+    color: darkblue;
+}
+
+/* Grouping selectors */
+.para, #heading{
+    color: darkslateblue;
+}
+
+/* Selects only p tags with the class para */
+p.para{
+    color: green;
+}
