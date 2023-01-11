@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>New Connection Registration Form</h1>
+    <form action="#" method="post">
+      <div class="form-fields">
+        <div class="title">
+          <label for="email">Email Address*</label> 
+        </div>
+        <input class="form-control" type="email" name="email" required/>
+      </div>
+      <div class="form-fields">
+        <div class="title">
+          <label for="mob">Phone Number*</label> 
+        </div>
+        <input class="form-control" type="tel" name="mob" pattern="^[6-9]\d{9}$" minlength="10" maxlength="10" required>
+      </div>
+      <div class="form-fields">
+        <div class="title">
+           <label for="fname">Full Name</label>
+        </div>
+        <input class="form-control" type="text" name="fname" placeholder="First name" />
+        <input class="form-control" type="text" name="lname" placeholder="Last name" />
+      </div>
+      <div class="form-fields">
+        <div class="title">
+          <label for="address">Address</label>
+        </div>
+        <input class="form-control" type="text" name="street" placeholder="Street Address" /> <br />
+        <input class="form-control" type="text" name="add" placeholder="Office, Suite, Apt." />
+      </div>
+      <div class="form-fields">
+        <div class="title">
+           <label for="city">City</label>
+        </div>
+        <input class="form-control" type="text" name="city" />
+        <select name="state" id="state">
+          <option value="haryana">Haryana</option>
+          <option value="delhi">delhi</option>
+          <option value="karnataka">karnataka</option>
+        </select>
+        <input class="form-control" type="number" placeholder="zip" min="1000" max="10000"/>
+      </div>
+      <div class="form-fields">
+        
+        <div class="title">
+          <label for="radio-tech">What radio technologies are you using?</label>
+        </div>
+        <input  type="checkbox" name="net-1" value="2G" /> 2G
+        <input  type="checkbox" name="net-2" value="3G" /> 3G
+        <input  type="checkbox" name="net-3" value="4G" /> 4G
+        <input  type="checkbox" name="net-3" value="5G" /> 5G
+      </div>
+      <div class="form-fields">
+        <div class="title">
+          <label for="data-use">How much data do you use monthly?</label> 
+        </div>
+        <input  type="radio" name="net"> 0-50MB
+        <input  type="radio" name="net"> 50-150MB
+        <input  type="radio" name="net"> 150-250MB
+        <input  type="radio" name="net"> 250-550MB
+      </div>
+
+      <div class="form-fields">
+        <div class="title">
+          <label for="subscription">Subscription Duration</label> 
+        </div>
+        <input class="form-control" type="date" name="date" min="2023-01-11">
+        <input class="form-control" type="month" name="month">
+        <label for="to"> To </label>
+        <input class="form-control" type="date" name="date">
+        <input class="form-control" type="month" name="month">
+      </div>
+      <div class="form-fields">
+        <input class="btn " type="reset" value="Reset Form"> 
+        <input class="btn" type="submit" value="Submit" >
+      </div>
+    </form>
+  </body>
+</html>
