@@ -1,0 +1,47 @@
+/* Universal selector - 0 */
+*{
+    color: black;
+}
+
+/* class selector - 10 */
+.para{
+    color: pink;   
+}
+
+/* pseudo-class selector - 10 */
+a:hover{
+    color: aqua;
+}
+
+/* attribute selector - 10 */
+a[href="#"]{
+    color: red;
+}
+
+
+/* tag selector - 1 */
+p{
+    color: blue;
+}
+
+/* pseudo-element selector - 1 */
+p::first-line{
+    color: green;
+}
+
+#para-id::first-line{
+    color: red;
+}
+
+/* id selector - 100 */
+#para-id{
+    /* 10,000 specificity */
+    color: blueviolet!important;  
+    /* 100 specificity */
+    /* background-color: pink; */
+}
+
+::marker{
+    text-align: end!important;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading and Specificity</title>
+   
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Cascading and Specificity</h1>
+    <ol>
+        <li>Position and Order or appearance: the browser applies the styles appearing at the end.</li>
+        <li>Origin: 
+            <ul>
+                <li>User Agent styles: these styles are the once applied by browser to your html element by default</li>
+                <li>Local user styles: these styles are applied by the operating system</li>
+                <li>Authored CSS: the css file that you have written</li>
+                <li>Authored CSS !important</li>
+                <li>Local user styles !important</li>
+                <li>User Agent styles !important</li>
+            </ul>
+        </li>
+        <li>Specificity: The algo which tells which selector has more priority based on the specificity score</li>
+        <li>!important : Highest priority</li>
+    </ol>
+    <p class="para" id="para-id" style="color: pink;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora hic optio recusandae neque iusto, sit autem quibusdam quae ducimus obcaecati eos modi ea magni fuga temporibus atque officia tenetur officiis perferendis minima exercitationem quam. Debitis, quidem quia atque maxime itaque facilis consectetur expedita fugiat velit repudiandae omnis ab ea possimus deserunt placeat inventore accusamus sed nihil asperiores sit. Mollitia autem possimus ratione placeat natus, adipisci repellat voluptate voluptatum quod ipsum eveniet iure qui quia dolore, dolorum nihil. Hic porro laborum sit nemo ut, eligendi error vero atque, culpa ipsam tempore distinctio possimus mollitia quidem quaerat pariatur voluptatibus consectetur fuga. Beatae.</p>
+    <a href="#">Link</a>
+
+    <style>
+        #para-id{
+            color: orange;
+        }
+    </style>
+    
+</body>
+</html>
