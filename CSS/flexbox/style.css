@@ -1,0 +1,26 @@
+.container{
+    background-color: lightblue;
+    height: 400px;
+    display: flex;
+    /* flex direction: row, column, row-reverse, column-reverse; */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap, wrap, wrap-reverse; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* justify-content: start, end, center, space-between, space-around, space-evenly; */
+    justify-content: start;
+    /* align-items: center, flex-end, flex-start, stretch; */
+    align-items: stretch;
+    /* align-content: normal,start, end, center, space-between, space-around, space-evenly; */
+    align-content: flex-start;
+    row-gap: 10px;
+    column-gap: 20px;
+
+}
+
+.container .item{
+    width: 20%;
+    background-color: darkblue;
+    color: white;
+    /* margin: 40px 10px; */
+}
