@@ -1,0 +1,17 @@
+table, th, td{
+    border: 1px solid rgb(14, 114, 119);
+    border-collapse: collapse;
+    padding: 10px 5px;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+
+th{
+    background-color: lightblue;
+}
+
+td:nth-child(odd){
+    background-color: lightgray;
+}
