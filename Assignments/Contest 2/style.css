@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    background: #1E1E1E;
+}
+.wrapper{
+    background: #262626;
+    border-radius: 25px;
+    margin: 20px 10px;
+}
+.left{
+    width: 20%;
+    height: 99vh;
+    position: fixed;
+    
+}
+
+.left .content .details{
+    text-align: center;
+
+}
+
+h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.left .content .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left .details p{
+    margin-bottom: 30px;
+}
+
+.left .content .btn{
+    background: #111111;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 45px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 83%;
+    margin-bottom: 17px;
+
+}
+
+.left .content{
+    margin: 56px 20px;
+}
+
+.right{
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 21%;
+}
+
+.right .content{
+    display: flex;
+    flex-direction: column;
+    padding: 56px 50px;
+    gap: 35px;
+
+}
+
+.right .content-container{
+    display: flex;
+    gap: 30px;
+}
+
+.content-container .details p {
+    margin-bottom: 60px;
+}
+
+.content-container .details a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.right .movie-info{
+   display: flex;
+   flex-direction: column;
+    padding: 35px 50px;
+    gap: 18px;
+}
+table {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+th, td{
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-collapse: collapse; 
+   
+}
+
+th{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+    border-collapse: collapse;
+    padding: 9px 15px;
+    text-align: left;
+}
+td{
+    padding: 3px 15px;
+    text-align: left;
+}
+
+td:last-child, th:last-child{
+    border-right: none;
+}
